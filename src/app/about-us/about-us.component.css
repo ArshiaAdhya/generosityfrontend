@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: 'Bree-Serif';
+    src: url('https://fonts.googleapis.com/css?family=BreeSerif');
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #donate-main {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+
+  button {
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    background: none;
+    border: none;
+    border-radius: 50%; 
+    position: relative;
+    z-index: 0;
+    transition: .3s;
+    cursor: pointer;
+    flex-direction: column;
+    /* transform : translate(50%,50%); */
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    padding: 10px;
+    border-radius: 50%; 
+    background: conic-gradient(
+          #31c1ff,
+          rgb(30, 64, 175) 30deg 120deg,
+          #31c1ff 150deg 180deg,
+          rgb(30, 64, 175) 210deg 300deg,
+          #31c1ff 330deg
+      );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: intersect
+  }
+  button:after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    background:
+      radial-gradient(200px at left  400px top 150px,rgb(30, 64, 175) 100%,#0000),
+      radial-gradient(200px at right 400px bottom 150px,#31c1ff 100%,#0000);
+    filter: blur(120px);
+    opacity: .5;
+  }
+  
+  button:before,
+  button:after {
+    transition:.5s, 99999s 99999s transform;
+  }
+  button:hover {
+    box-shadow: 0 0 0 1px #666;
+  }
+  
+  button:hover:before,
+  button:hover:after {
+    transform: rotate(36000deg);
+    transition: .5s,600s linear transform;
+  }
+  button:before {
+    background-color: #222;
+  }
+  
+  button>p{
+    /* background-color: red; */
+    transform: translate(0%, 50%);
+    opacity:1;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+  }

@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'Bree-Serif';
+    src: url('https://fonts.googleapis.com/css?family=BreeSerif');
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #donate-main {
+    animation: fadeIn 1s ease-in-out;
+  }

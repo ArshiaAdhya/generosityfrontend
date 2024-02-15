@@ -1,19 +1,23 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    LandingPageComponent,
   ],
   template: `
-    <app-landing-page> </app-landing-page> 
+    <router-outlet />
   `,
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Generosity';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }

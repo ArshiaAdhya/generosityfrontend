@@ -3,5 +3,28 @@
     font-family: 'Quintessential';
     src: url('https://fonts.googleapis.com/css?family=Quintessential');
 }
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh; /* Centering the buttons vertically */
+    margin-bottom: 3vh;
+  }
 
+  .button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
 /* Bree Serif */

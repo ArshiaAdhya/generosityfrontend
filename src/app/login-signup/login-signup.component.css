@@ -1,6 +1,11 @@
 
   
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+ @font-face {
+  font-family: 'Montserrat';
+  src: url('/assests/Montserrat.1.ttf') format('truetype');
+  font-weight: normal;  /* Adjust font-weight as needed */
+  font-style: normal;   /* Adjust font-style as needed */
+}
   
 .App {
 font-family: sans-serif;

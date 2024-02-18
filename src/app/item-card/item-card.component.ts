@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
     </a>
     <div class="p-5">
         <a class= "text-orange-300 border-orange-300 border rounded text-[12px] p-1 ml-[260px] ">
-        Categoory
+        Category
         </a>
         <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Item Name</h5>

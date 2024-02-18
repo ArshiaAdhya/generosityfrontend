@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "genbackend": {
+      "hosting": {
+        "genbackend": [
+          "generosity"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "genbackend"
+  }
+}

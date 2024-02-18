@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
         <img class="rounded-t-lg" src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="" />
     </a>
     <div class="p-5">
+        <a class= "text-orange-300 border-orange-300 border rounded text-[12px] p-1 ml-[260px] ">
+        Categoory
+        </a>
         <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Item Name</h5>
         </a>

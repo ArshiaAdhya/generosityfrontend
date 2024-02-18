@@ -13,5 +13,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-us.component.css'
 })
 export class AboutUsComponent {
- 
+
 }

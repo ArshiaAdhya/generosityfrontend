@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Generosity": {
+    "genbackend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Generosity:build:production"
+              "buildTarget": "genbackend:build:production"
             },
             "development": {
-              "buildTarget": "Generosity:build:development"
+              "buildTarget": "genbackend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Generosity:build"
+            "buildTarget": "genbackend:build"
           }
         },
         "test": {
@@ -93,6 +93,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "genbackend:build:production",
+              "serveTarget": "genbackend:serve:production"
+            },
+            "development": {
+              "buildTarget": "genbackend:build:development",
+              "serveTarget": "genbackend:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

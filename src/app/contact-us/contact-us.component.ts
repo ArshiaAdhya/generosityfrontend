@@ -41,7 +41,7 @@ import { FooterComponent } from '../footer/footer.component';
           <p class="w-full px-8"><input name="subject" type="text" class="w-full bg-transparent focus:outline-none border-x-0 border-t-0 border-b-blue-800 border-b-2"><br></p>
           <p class="text-left w-full p-8 font-thin text-xl"><label for="Message" >Message</label><br></p>
           <p class="w-full p-8"><input name="Message" type="text" class="w-full bg-transparent focus:outline-none border-x-0 border-t-0 border-b-blue-800 border-b-2"><br></p>
-          
+          <button class="bg-blue-800 hover:bg-blue-900 transform translate-x-4 w-full m-8 py-2 rounded-md text-white font-extralight text-xl">Submit</button>
       </div>
     </div>
     </div>

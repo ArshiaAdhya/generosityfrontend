@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router'; // Import essential Router module
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +18,7 @@ import { CommonModule } from '@angular/common';
 <div class="container mx-auto py-8">
   <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
     <!-- <h2 class="text-lg font-semibold mb-4">Quotes to Inspire Donation:</h2> -->
-    <ul class="list-disc pl-6">
+    <ul class="list-disc pl-6 " style="font-weight: bold;">
       "The meaning of life is to find your gift. The purpose of life is to give it away." - Pablo Picasso     <!-- <li class="mb-2">"No one has ever become poor by giving." - Anne Frank</li> -->
       <!-- <li class="mb-2">"We make a living by what we get, but we make a life by what we give." - Winston Churchill</li> -->
       <!-- <li class="mb-2">"The best way to find yourself is to lose yourself in the service of others." - Mahatma Gandhi</li> -->
@@ -30,7 +32,7 @@ import { CommonModule } from '@angular/common';
 
   <div class="button-container">
     <button class="button">Donate Now</button>
-    <button class="button">Register as an Organization</button>
+    <button RouterLink="/recieve" class="button">Recieve</button>
   </div>
 
 

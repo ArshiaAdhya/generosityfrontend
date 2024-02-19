@@ -28,3 +28,36 @@
     background-color: #0056b3;
   }
 /* Bree Serif */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 2vh;
+  margin-top: 6vh;
+}
+
+.earth-img {
+  width: 400px; /* Adjust size as needed */
+  height: auto;
+}
+
+.text-container {
+  max-width: calc(100% - 100px); /* Adjust width as needed, considering the Earth image width and padding */
+  animation: slide-in 2s ease forwards; /* Animation */
+}
+
+/* Keyframes for the animation */
+@keyframes slide-in {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+p {
+  margin-left: 200px; /* Remove default margin */
+  line-height: 1.5; /* Adjust line height */
+  text-decoration: solid; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px; /* Adjust font size */
+  /* Adjust font weight */
+}

@@ -27,13 +27,19 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   </div>
 </div>
 
- 
 
 
-  <div class="button-container">
-    <button class="button">Donate Now</button>
-    <button RouterLink="/recieve" class="button">Recieve</button>
-  </div>
+
+<div class="button-container">
+  <button class="button">Donate Now</button>
+  <button RouterLink="/recieve" class="button">Recieve</button>
+</div>
+<div class="container mx-auto py-8" >
+    <img src="/assets/earth.png" alt="Earth" class="earth-img">
+    <div class="text-container">
+        <p>Globally, an estimated 1.3 billion tons of food, 92 million tons of textile and many more reusable things are wasted. Our technology creates a seamless link between volunteers and registered NGOs, empowering volunteers to effortlessly engage in philanthropic tasks. This dynamic collaboration accelerates aid delivery, ensuring swift assistance to those in need. With this technology, the partnership between volunteers and NGOs becomes a catalyst for effective and timely philanthropy. A simple comparison with the data indicating the number of people who lack resources proves that this solution can be extremely effective.</p>
+    </div>
+</div>
 
 
   `,

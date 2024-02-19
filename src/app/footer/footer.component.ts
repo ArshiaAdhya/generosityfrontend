@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router'; // Import essential Router module
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { AboutUsComponent } from '../about-us/about-us.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [
+    AboutUsComponent,
+    RouterLink,
+    RouterOutlet,
+  ],
   template: `
 <!-- footer.component.html -->
 <!-- footer.component.html -->
@@ -11,7 +18,7 @@ import { Component } from '@angular/core';
   <div class="md:flex-row justify-between items-center">
     <div class="flex flex-wrap items-center justify-center"> <!-- Updated -->
       <div class="mx-4 ">
-        <a href="#" class="text-gray-300 hover:text-white">Home</a>
+        <a routerLink="/" class="text-gray-300 hover:text-white">Home</a>
       </div>
       <div class="mx-4">
         <a href="#" class="text-gray-300 hover:text-white">About</a>
@@ -20,7 +27,7 @@ import { Component } from '@angular/core';
         <a href="#" class="text-gray-300 hover:text-white">Services</a>
       </div>
       <div class="mx-4 ">
-        <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+        <a routerLink="/contact_us" class="text-gray-300 hover:text-white">Contact</a>
       </div>
     </div>
   

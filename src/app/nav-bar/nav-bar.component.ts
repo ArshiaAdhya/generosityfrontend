@@ -27,7 +27,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     </div>
   </div>
   <div class="navbar-center">
-    <a class="btn btn-ghost text-xl">Generosity</a>
+    <a routerLink="/" class="btn btn-ghost text-xl">Generosity</a>
   </div>
   <div class="navbar-end">
     <button class="btn btn-ghost btn-circle">

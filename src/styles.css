@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Bree-Serif';
+    src: url('https://fonts.googleapis.com/css?family=BreeSerif');
+}
+
+*{
+    font-family: "Bree-serif";
+}

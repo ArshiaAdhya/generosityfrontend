@@ -5,6 +5,7 @@ import { ReceivePageComponent } from './receive-page/receive-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { ProfilePageDonorsComponent } from './profile-page-donors/profile-page-donors.component';
 import { ProfilePageNgosComponent } from './profile-page-ngos/profile-page-ngos.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 export const routes: Routes = [
@@ -37,5 +38,10 @@ export const routes: Routes = [
         path: 'ngo_profile',
         title: 'NGO\'s Profile',
         component: ProfilePageNgosComponent,
+    },
+    {
+        path: 'contact_us',
+        title: 'Contact Us',
+        component: ContactUsComponent,
     },
 ];
